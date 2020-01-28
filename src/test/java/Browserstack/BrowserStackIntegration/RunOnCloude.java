@@ -26,7 +26,7 @@ public class RunOnCloude {
 		    WebDriver driver = new RemoteWebDriver(new java.net.URL(URL), caps);
 		    driver.get("http://www.google.com/ncr");
 		    WebElement element = driver.findElement(By.name("q"));
-
+System.out.println("Hi");
 		    element.sendKeys("BrowserStack");
 		    element.submit();
 			Thread.sleep(5000);	
